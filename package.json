@@ -1,0 +1,15 @@
+{
+  "name": "scms",
+  "version": "1.0.0",
+  "description": "a simple cms ",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
