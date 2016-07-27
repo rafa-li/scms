@@ -1,4 +1,4 @@
 module.exports = {
 	port: 7101,
-	mongdb
+	mongodb: 'mongodb://localhost/scms'
 }

@@ -7,10 +7,12 @@ module.exports = function () {
 
 	app.use(bodyParser.json());
 
+	require('../app/routes/news.server.routes')(app);
+
 	app.use(function (req,res,next) {
 		res.status(404);
 		try{
-			return res.json('404 set header after sent');
+			return res.json('Not Found');
 		}catch(e){
 			console.error('404 set header after sent');
 		}
@@ -22,7 +24,7 @@ module.exports = function () {
 		try{
 			return res.json(err.message || 'server error');
 		}catch(e){
-			console.error('500 set header after');
+			console.error('500 set header after sent');
 		}
 	})
 	return app;
